@@ -5,7 +5,7 @@ The application is implemented:
 - Form of authentication (JWT) and registration
 - Ability to register and log in
 - Ability to create, edit, delete and view messages
-- The user can like or not like other users’ posts, but not his own 
+- The user can like or dislike other users’ posts, but not his own 
 - User Interface Documentation (Swagger/ReDoc)
 - Getting additional information about users using https://clearbit.com/platform/enrichment
 - Verification of an email address using hunter.co
