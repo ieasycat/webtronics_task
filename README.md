@@ -20,6 +20,7 @@ Stack: FastAPI, Tortoise ORM, PostgresSQL
    - source venv_name/bin/activate
    - python -m pip install -r requirements.txt
    - Creation .env file. Example .env_example
+   - Mark the Вirectory with the project as the Source Root
 
 ## DataBase
 
