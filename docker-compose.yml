@@ -1,0 +1,22 @@
+version: "3.10"
+
+services:
+  app:
+    container_name: webtronics_app
+    build: .
+    entrypoint: ./boot.sh
+    restart: on-failure
+    env_file:
+      - .env_docker
+    ports:
+      - 8000:8000
+    depends_on:
+      - db
+
+  db:
+    image: postgres:latest
+    container_name: webtronics_db
+    env_file:
+      - .env_docker
+    ports:
+      - 5432:5432
