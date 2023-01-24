@@ -20,9 +20,9 @@ async def get_post(pk: int):
 
 
 @router.put('/{pk:int}', response_model=PostUpdateResponse)
-async def edit_post(pk: int, text: PostUpdateRequest, current_user: int = Depends(get_current_user)):
+async def update_post(pk: int, text: PostUpdateRequest, current_user: int = Depends(get_current_user)):
     """Modifies a specific post from the current user"""
-    return await ApiControllerPost.edit_post(pk=pk, text=text.text, user_id=current_user)
+    return await ApiControllerPost.update_post(pk=pk, text=text.text, user_id=current_user)
 
 
 @router.post('/', response_model=PostAddResponse)

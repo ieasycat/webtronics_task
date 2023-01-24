@@ -45,8 +45,8 @@ class ApiControllerPost:
         return PostAddResponse(**post.__dict__)
 
     @staticmethod
-    async def edit_post(pk: int, text: str, user_id: int) -> PostUpdateResponse:
-        post = await PostDBController.edit_post(pk=pk, text=text, user_id=user_id)
+    async def update_post(pk: int, text: str, user_id: int) -> PostUpdateResponse:
+        post = await PostDBController.update_post(pk=pk, text=text, user_id=user_id)
         if post:
             like_post, dislike_post = await ApiControllerPost.get_post_evaluation(post=post)
             return PostUpdateResponse(**post.__dict__, like=like_post, dislike=dislike_post)

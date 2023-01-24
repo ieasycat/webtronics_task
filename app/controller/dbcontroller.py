@@ -19,7 +19,7 @@ class PostDBController:
         return await Post.create(text=text, user_id=user_id)
 
     @staticmethod
-    async def edit_post(pk: int, user_id: int, text: str) -> Optional[Post]:
+    async def update_post(pk: int, user_id: int, text: str) -> Optional[Post]:
         post = await Post.get_or_none(pk=pk, user_id=user_id)
         if post:
             post.text = text
