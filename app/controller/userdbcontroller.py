@@ -4,7 +4,7 @@ from passlib.hash import bcrypt
 from config.config import CONFIG
 import jwt
 from typing import Union, Optional
-from app.utils.hunter_co import verification_email
+from app.utils.hunter_сo import verification_email
 from app.utils.clearbit import get_clearbit_data
 from app.exception.apiexception import api_exception
 
