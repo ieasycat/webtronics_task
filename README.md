@@ -59,8 +59,16 @@ Stack: FastAPI, Tortoise ORM, PostgresSQL
 5. The API needs a UI Documentation (Swagger/ReDoc)
 
 
-### Additional tasks:
+## Additional tasks:
 
 1. Use https://clearbit.com/platform/enrichment for getting additional data for the user on signup
 2. Use emailhunter.co for verifying email existence on registration
 3. Use an in-memory DB for storing post likes and dislikes (As a cache, that gets updated whenever new likes and dislikes get added) 
+
+
+## Test
+
+This code is 95% covered by tests. To run tests with % display, use the command: 
+   - pytest --cov=.
+
+<img width="463" alt="image" src="https://user-images.githubusercontent.com/73560171/214385767-2b76f16b-ab95-45b3-8b0f-30e047e948a1.png">
